@@ -33,16 +33,16 @@ public class TasksAdapter extends RecyclerView.Adapter<TasksAdapter.MyViewHolder
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        Log.d(TAG, "onBindViewHolder: " + data.get(String.valueOf(position+1)));
-        if (data.get(String.valueOf(position+1)) != null) {
-            holder.nameText.setText(data.get(String.valueOf(position+1)).getTaskName());
-            holder.idText.setText(data.get(String.valueOf(position+1)).getId());
-            holder.typeText.setText(data.get(String.valueOf(position+1)).getType());
-            holder.urlText.setText(data.get(String.valueOf(position+1)).getUrl());
-            holder.quantityText.setText(String.valueOf(data.get(String.valueOf(position+1)).getQuantity()));
-            holder.peopleText.setText(String.valueOf(data.get(String.valueOf(position+1)).getPeople()));
-            holder.taskProgress.setMax(data.get(String.valueOf(position+1)).getQuantity());
-            holder.taskProgress.setProgress(data.get(String.valueOf(position+1)).getPeople());
+        Log.d(TAG, "onBindViewHolder: " + data.get(String.valueOf(position + 1)));
+        if (data.get(String.valueOf(position + 1)) != null) {
+            holder.nameText.setText(data.get(String.valueOf(position + 1)).getTaskName());
+            holder.idText.setText(data.get(String.valueOf(position + 1)).getId());
+            holder.typeText.setText(data.get(String.valueOf(position + 1)).getType());
+            holder.urlText.setText(data.get(String.valueOf(position + 1)).getUrl());
+            holder.quantityText.setText(String.valueOf(data.get(String.valueOf(position + 1)).getQuantity()));
+            holder.peopleText.setText(String.valueOf(data.get(String.valueOf(position + 1)).getPeople()));
+            holder.taskProgress.setMax(data.get(String.valueOf(position + 1)).getQuantity());
+            holder.taskProgress.setProgress(data.get(String.valueOf(position + 1)).getPeople());
         }
     }
 
